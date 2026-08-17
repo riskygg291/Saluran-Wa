@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#7c3aed">
+<title>Saluran WhatsApp Saya</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh;overflow:hidden;background:#16052b;color:#fff}
+.bg{position:fixed;inset:0;overflow:hidden;background:radial-gradient(circle at 50% 20%,#7c3aed55,transparent 35%),linear-gradient(135deg,#120020,#260044,#4c1d95,#16052b)}
+.orb{position:absolute;border-radius:50%;filter:blur(8px);opacity:.45;animation:float 12s ease-in-out infinite}
+.o1{width:330px;height:330px;background:#a855f7;left:-100px;top:-80px}.o2{width:260px;height:260px;background:#6366f1;right:-70px;top:25%}.o3{width:300px;height:300px;background:#c026d3;left:30%;bottom:-150px}
+@keyframes float{50%{transform:translate(55px,-35px) scale(1.12)}}
+.wrap{position:relative;z-index:2;min-height:100vh;display:grid;place-items:center;padding:22px}
+.card{width:min(430px,100%);padding:34px 26px 26px;border:1px solid #ffffff22;background:#ffffff12;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-radius:32px;box-shadow:0 30px 80px #0008;text-align:center;animation:up .7s ease}
+@keyframes up{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.avatar{width:112px;height:112px;margin:0 auto 18px;border-radius:30px;padding:4px;background:linear-gradient(135deg,#d8b4fe,#7c3aed,#4c1d95);box-shadow:0 0 45px #a855f766}
+.avatar img{width:100%;height:100%;object-fit:cover;border-radius:26px;background:#24103d}
+h1{font-size:27px;letter-spacing:-.7px;margin-bottom:9px}
+.sub{color:#ddd6fe;font-size:14px;line-height:1.6;margin-bottom:24px}
+.badge{display:inline-flex;align-items:center;gap:7px;padding:7px 12px;border-radius:99px;background:#25d3661c;border:1px solid #25d36655;color:#b8ffd0;font-size:12px;margin-bottom:16px}
+.dot{width:7px;height:7px;background:#25d366;border-radius:50%;box-shadow:0 0 12px #25d366}
+.btn{display:flex;justify-content:center;align-items:center;gap:10px;width:100%;padding:16px;border:0;border-radius:18px;background:linear-gradient(135deg,#25d366,#1ebe5d);color:#071b0d;font-weight:800;font-size:16px;text-decoration:none;box-shadow:0 14px 35px #25d36638;transition:.2s;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 18px 42px #25d36655}
+.btn:active{transform:scale(.98)}
+.wa{font-size:22px}
+.note{margin-top:18px;color:#c4b5fd;font-size:11px}
+</style>
+</head>
+<body>
+<div class="bg"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+<main class="wrap">
+<section class="card">
+  <div class="avatar">
+    <img src="channel-photo.jpg" alt="Foto saluran WhatsApp" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect width=%22200%22 height=%22200%22 rx=%2240%22 fill=%227c3aed%22/%3E%3Ctext x=%22100%22 y=%22125%22 text-anchor=%22middle%22 font-size=%2290%22%3EWA%3C/text%3E%3C/svg%3E'">
+  </div>
+  <div class="badge"><span class="dot"></span> Saluran WhatsApp</div>
+  <h1>Saluran WhatsApp Saya</h1>
+  <p class="sub">Klik tombol di bawah untuk langsung membuka saluran WhatsApp saya.</p>
+  <a class="btn" href="https://whatsapp.com/channel/0029VbDwFTh5vKA6YbBcfN0v" target="_blank" rel="noopener">
+    <span class="wa">◉</span> Buka Saluran WhatsApp
+  </a>
+  <p class="note">1× klik • langsung menuju saluran</p>
+</section>
+</main>
+</body>
+</html>
